@@ -51,7 +51,7 @@ spec:
           imagePullPolicy: {{ $top.Values.imagePullPolicy | default "IfNotPresent"}}
           ports:
             - name: http
-              containerPort: {{$deployment.containerPort | default 8080 | quote}}
+              containerPort: {{$deployment.containerPort | default 8080 }}
               protocol: TCP
           startupProbe:
             httpGet:
