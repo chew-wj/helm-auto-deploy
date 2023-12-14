@@ -8,24 +8,24 @@ fullnameOverride: ""
 commonConfig:
   environment: dev
   useTimeStampAsLabel: true
-  timeStamp: "1700698160"
+  timeStamp: "s1700698160"
   repository: "docker.io"
   resourceKind: "Rollout" # Rollout
   apiVersion: "#argoproj.io/v1alpha1" #argoproj.io/v1alpha1
 
 deploymentList:
-#  springboot-demo:                     # image name
-#    name: springboot-demo              # name of service, should be same as image name
-#    imageTag: build_1                  # image tag(required)
-#    repository: ghcr.io/chrisdevopsorg # image repository(optional, default take value from commonConfig.repository)
-#    replicas: 2                        # deployment replicas(optional default 1)
-#    cm: test-config                    # configmap(optional)
-#    extraEnvs:                         # extra environment variables(optional)
-#      - name: FOO
-#        value: BAR
-#    containerPort: 80                  # Container Port(optional, default 8080)
-#    cpuAllocated: 200m                 # Cpu requests and limits(optional default 1)
-#    memAllocated: 128Mi                # Memory requests and limits(optional default 1Gi)
+  nginx:                     # image name
+    name: nginx              # name of service, should be same as image name
+    imageTag: latest                  # image tag(required)
+    repository: docker.io # image repository(optional, default take value from commonConfig.repository)
+    replicas: 2                        # deployment replicas(optional default 1)
+ #   cm: test-config                    # configmap(optional)
+    extraEnvs:                         # extra environment variables(optional)
+      - name: FOO
+        value: BAR
+    containerPort: 80                  # Container Port(optional, default 8080)
+    cpuAllocated: 200m                 # Cpu requests and limits(optional default 1)
+    memAllocated: 128Mi                # Memory requests and limits(optional default 1Gi)
 
 strategy:
   Rollout:
