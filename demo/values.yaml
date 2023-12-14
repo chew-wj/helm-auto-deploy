@@ -10,8 +10,8 @@ commonConfig:
   useTimeStampAsLabel: true
   timeStamp: "s1700698160"
   repository: "docker.io"
-  resourceKind: "Rollout" # Rollout
-  apiVersion: "#argoproj.io/v1alpha1" #argoproj.io/v1alpha1
+  # resourceKind: "Rollout" # Rollout
+  # apiVersion: "argoproj.io/v1alpha1" #argoproj.io/v1alpha1
 
 deploymentList:
   nginx:                     # image name

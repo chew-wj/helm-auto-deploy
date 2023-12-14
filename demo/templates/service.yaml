@@ -5,7 +5,7 @@ kind: Service
 metadata:
   name: {{ $deployment.name }}
   labels:
-    {{ $deployment.name }}
+    app: {{ $deployment.name }}
 spec:
   type: {{ $top.Values.service.type }}
   ports:
@@ -14,6 +14,6 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{ $deployment.name }}
+    app: {{ $deployment.name }}
 ---
 {{- end}}

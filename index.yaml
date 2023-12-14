@@ -3,9 +3,19 @@ entries:
   demo:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-14T15:54:00.94802814+08:00"
+    created: "2023-12-14T16:00:28.988953159+08:00"
     description: A Helm chart for Kubernetes
-    digest: d6394fb7743b15c4482252cdb76749a62fb7d68c20c3206f2626a202a5ee2352
+    digest: ddea66c850f36de55158be1d0ea0966c09865c41a5f17745fab4309928274e7c
+    name: demo
+    type: application
+    urls:
+    - https://chew-wj.github.io/helm-auto-deploy/demo-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-12-14T16:00:28.988655371+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 0e6447b9c84231486e61ca696c91ccc8d3b5b0c689cd7df639e4f91134509e8c
     name: demo
     type: application
     urls:
@@ -13,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-14T15:54:00.947718853+08:00"
+    created: "2023-12-14T16:00:28.98833251+08:00"
     description: A Helm chart for Kubernetes
     digest: 08a9249e2c1ae2eb354fee55588b993bc81952f2a33e1078b24dc501d7a7a4ab
     name: demo
@@ -23,7 +33,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-14T15:54:00.94747103+08:00"
+    created: "2023-12-14T16:00:28.988098075+08:00"
     description: A Helm chart for Kubernetes
     digest: e2447bb743e4de5689b0c2ba4b1777e9ed603471a38e0c24a85ff9e667311a4a
     name: demo
@@ -33,7 +43,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-12-14T15:54:00.947231917+08:00"
+    created: "2023-12-14T16:00:28.987867456+08:00"
     description: A Helm chart for Kubernetes
     digest: dd3897d9d2bb4ed6a7cb27e5ff22e57f7432560d9b0f6f75316d175d62e8f115
     name: demo
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://chew-wj.github.io/helm-auto-deploy/demo-0.1.0.tgz
     version: 0.1.0
-generated: "2023-12-14T15:54:00.94683028+08:00"
+generated: "2023-12-14T16:00:28.987462641+08:00"
